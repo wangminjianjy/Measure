@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWindow"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/view_height_20">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBgWhite"
+        android:padding="@dimen/view_height_10"
+        android:text="@string/business_search_title"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/text_size_17" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/view_height_5"
+        android:paddingLeft="@dimen/view_height_15"
+        android:paddingRight="@dimen/view_height_15"
+        android:paddingTop="@dimen/view_height_5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_height_10"
+            android:layout_marginTop="@dimen/view_height_10"
+            android:text="@string/business_search_pound_date"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_business_search_date_start"
+                style="@style/style_edit_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/business_search_date_start"
+                android:maxLines="1"
+                android:padding="@dimen/view_height_5"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_height_5"
+                android:layout_marginRight="@dimen/view_height_5"
+                android:gravity="center"
+                android:text="@string/business_search_date" />
+
+            <TextView
+                android:id="@+id/tv_business_search_date_end"
+                style="@style/style_edit_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/business_search_date_end"
+                android:maxLines="1"
+                android:padding="@dimen/view_height_5"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/view_height_5"
+        android:paddingLeft="@dimen/view_height_15"
+        android:paddingRight="@dimen/view_height_5"
+        android:paddingTop="@dimen/view_height_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/business_search_business"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/et_business_search_business"
+            style="@style/style_edit_null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:hint="@string/business_search_business_hint"
+            android:maxLines="1"
+            android:padding="@dimen/view_height_5"
+            android:singleLine="true"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/view_height_15"
+        android:paddingRight="@dimen/view_height_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/business_search_truck"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/et_business_search_truck"
+            style="@style/style_edit_null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:hint="@string/business_search_truck_hint"
+            android:maxLines="1"
+            android:padding="@dimen/view_height_5"
+            android:singleLine="true"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_height_10"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/view_height_20"
+        android:paddingRight="@dimen/view_height_20">
+
+        <TextView
+            android:id="@+id/tv_business_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_height_10"
+            android:layout_marginRight="@dimen/view_height_15"
+            android:layout_weight="1"
+            android:background="@color/colorNormal"
+            android:gravity="center"
+            android:padding="@dimen/view_height_10"
+            android:text="@string/business_search_cancel"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tv_business_search_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_height_15"
+            android:layout_marginRight="@dimen/view_height_10"
+            android:layout_weight="1"
+            android:background="@color/colorNormal"
+            android:gravity="center"
+            android:padding="@dimen/view_height_10"
+            android:text="@string/business_search_submit"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+</LinearLayout>

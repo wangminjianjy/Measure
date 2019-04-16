@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWindow"
+    android:orientation="vertical"
+    tools:context="cn.com.food.measure.ui.main.MainActivity">
+
+    <include layout="@layout/toolbar_custom_simple" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorBgWindow"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/main_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height_220"
+                android:background="@drawable/main_banner1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/main_business"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorBgWhite"
+                    android:drawablePadding="@dimen/view_height_10"
+                    android:drawableTop="@drawable/main_business"
+                    android:gravity="center"
+                    android:padding="@dimen/view_height_10"
+                    android:text="@string/main_menu_business"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <View
+                    android:layout_width="@dimen/view_height_1"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/main_backup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorBgWhite"
+                    android:drawablePadding="@dimen/view_height_10"
+                    android:drawableTop="@drawable/main_backup"
+                    android:gravity="center"
+                    android:padding="@dimen/view_height_10"
+                    android:text="@string/main_menu_backup"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

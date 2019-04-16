@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWindow"
+    android:orientation="vertical"
+    tools:context="cn.com.food.measure.ui.business.BusinessActivity">
+
+    <include layout="@layout/toolbar_custom_simple" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_height_5"
+        android:layout_marginLeft="@dimen/view_height_10"
+        android:layout_marginRight="@dimen/view_height_10"
+        android:layout_marginTop="@dimen/view_height_5"
+        android:background="@color/colorBgWhite"
+        android:gravity="center"
+        android:padding="@dimen/view_height_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/common_search"
+            android:drawablePadding="@dimen/view_height_5"
+            android:text="@string/hint_search_text" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_business_data_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/view_height_15"
+        android:text="@string/hint_data_null"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/text_size_24" />
+
+    <ListView
+        android:id="@+id/lv_business_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorDivider"
+        android:layout_marginRight="@dimen/view_height_5"
+        android:layout_marginLeft="@dimen/view_height_5"
+        android:dividerHeight="@dimen/view_height_5"
+        android:overScrollMode="never"
+        android:padding="@dimen/view_height_5"
+        android:scrollbars="none" />
+</LinearLayout>
